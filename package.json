@@ -1,0 +1,14 @@
+{
+  "name": "ocp404",
+  "version": "1.0.0",
+  "description": "First onchain ERC404 Pepe NFT collection",
+  "scripts": {
+    "start": "node circulating_supply/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "web3": "^1.3.5"
+  },
+  "license": "ISC"
+}

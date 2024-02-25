@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "circulating_supply/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/totalSupply",
+      "dest": "/app.js"
+    },
+    {
+      "src": "/api/circulatingSupply",
+      "dest": "/circulating_supply/app.js"
+    }
+  ]
+}
