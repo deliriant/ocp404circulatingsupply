@@ -4,20 +4,12 @@
     {
       "src": "app.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "circulating_supply/app.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/totalSupply",
+      "src": "/api/(.*)",
       "dest": "/app.js"
-    },
-    {
-      "src": "/api/circulatingSupply",
-      "dest": "/circulating_supply/app.js"
     }
   ]
 }
