@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const app = express();
 
 // Use your Ethereum mainnet provider URL
-const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"));
+const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/b770b5ecb83c48939f9c3b9e514bc0f3"));
 
 // Original Token Contract Details
 const originalTokenAddress = '0xB87b96868644d99Cc70a8565BA7311482eDEBF6e';
