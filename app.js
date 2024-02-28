@@ -1,5 +1,6 @@
 const express = require('express');
 const Web3 = require('web3');
+const cors = require('cors');
 const app = express();
 
 // Use your Ethereum mainnet provider URL
@@ -1445,6 +1446,8 @@ const lpTokenAbi = [
 // Initialize contract instances
 const originalTokenContract = new web3.eth.Contract(originalTokenAbi, originalTokenAddress);
 const lpTokenContract = new web3.eth.Contract(lpTokenAbi, lpTokenAddress);
+
+app.use(cors());
 
 app.get('/api/totalSupply', async (req, res) => {
   try {
